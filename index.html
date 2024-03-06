@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0px;
+        margin: 0px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: black;
+      }
+      navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff7070ff;
+        padding: 15px;
+        gap: 70px;
+        white-space: nowrap;
+        position: sticky;
+        top: 0px;
+
+      }
+      #navlinks{
+        display: flex;
+        gap: 70px;
+      }
+      #dropdown {
+        flex-direction: column;
+        gap: 7px;
+        background-color: #ff7070ff;
+        position: absolute;
+        top: 35px;
+        right: 5%;
+        padding: 15px;
+        border-radius: 8px;
+        display: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 3px;
+      }
+      #menubar {
+        width: 25px;
+      }
+
+      #main {
+        display: flex;
+        height: 600px;
+        background-image: linear-gradient(to right, #fff7adff, #ffb5eeff);
+      }
+      #mainhead{
+        font-size: 4vw;
+      }
+      #fooddiv {
+        width: 50%;
+        overflow: hidden;
+ 
+      }
+      #food {
+        width: 100%;
+        height: 100%;
+
+      }
+      #heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+      }
+      #sublayer {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        justify-content: space-between;
+      }
+      #btn1 {
+        padding: 10px;
+        width: 40%;
+        background-color: #ff7070ff;
+        border: none;
+        color: white;
+        margin-top: 30px;
+      }
+      #main2 {
+        height: 600px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        background-image: linear-gradient(to right, #fff7adff, #ffb5eeff);
+      }
+      #gallery {
+        width: 40%;
+        height: 80%;
+        display: flex;
+        gap: 10px;
+      }
+      .img1 {
+        grid-area: "stag";
+        width: 100%;
+        height: 100%;
+      }
+      .img2 {
+        grid-area: "street";
+        width: 100%;
+        height: 100%;
+      }
+      .img3 {
+        grid-area: "table";
+        width: 100%;
+        height: 100%;
+      }
+      #btn2 {
+        width: 30%;
+        height: fit-content;
+        background-color: #ff7070ff;
+        padding: 15px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      #btn2head {
+        line-height: 10px;
+        font-size: 2vw;
+        letter-spacing: 3px;
+      }
+      @media all and (min-width: 500px) and (max-width: 900px) {
+        #main {
+          height: 400px;
+        }
+        #main2 {
+          height: 400px;
+        }
+        #sublayer {
+          width: 90%;
+        }
+         #navlinks{
+          display: none;
+         }
+         #drophead:hover #dropdown {
+        display: flex;
+        font-size: 10px;
+      }
+      navbar{
+        justify-content: flex-end;
+        padding: 10px;
+        
+      }
+      p{
+        line-height: 3vh;
+      }
+      #btn1{
+        margin-top: 10px;
+      }
+      #mainhead{
+        font-size: 5vw;
+      }
+      #maintext{
+        line-height: 3vh;
+      }
+      }
+      @media all and (max-width: 500px) {
+        #main {
+          flex-direction: column;
+          height: fit-content;
+          padding: 20px 0px;
+          gap: 15px;
+        }
+        #main2 {
+          flex-direction: column;
+        }
+        #heading {
+          width: 100%;
+        }
+        #fooddiv {
+          width: 100%;
+        }
+        #gallery {
+          width: 80%;
+          height: 40%;
+        }
+        #btn2 {
+          width: 70%;
+          padding: 15px;
+        }
+        #btn2head {
+          line-height: 10px;
+          font-size: 4vw;
+          letter-spacing: 3px;
+        }
+        #navlinks{
+          display: none;
+        }
+        #drophead:hover #dropdown {
+        display: flex;
+        font-size: 10px;
+      }
+      navbar{
+        justify-content: flex-end;
+        padding: 10px;
+        
+      }
+#mainhead{
+  margin: 0;
+  font-size: 10vw;
+}
+#maintext{
+  line-height: 3vh;
+}
+      }
+    </style>
+  </head>
+  <body>
+    <navbar>
+      <div id="navlinks">
+      <a >home</a>
+      <a >Order</a>
+      <a >Food</a>
+      <a >Restraunts</a>
+      <a >Testimionials</a>
+      <a >Contact us</a>
+      </div>
+      <div id="drophead">
+        <img id="menubar" src="./HTML CSS Assignment/menu-bar.png" />
+        <div id="dropdown" >
+          <a >home</a>
+          <a >Order</a>
+          <a >Food</a>
+          <a >Restraunts</a>
+          <a >Testimionials</a>
+          <a >Contact us</a>
+        </div>
+      </div>
+    </navbar>
+    <div id="main">
+      <div id="heading">
+        <div id="sublayer">
+          <h1 id="mainhead">LOREM IPUSM</h1>
+          <p  id="maintext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id
+            est vitae dolor rhoncus tristique. Maecenas metus quam, rhoncus
+            euismod lorem in, sollicitudin viverra eros. Donec dictum luctus
+            quam ut tristique. Curabitur nec faucibus purus. Quisque congue sem
+            nec justo mollis, in tincidunt erat pretium. Sed pulvinar, massa ac
+            porta viverra.
+          </p>
+          <button id="btn1">Click Me</button>
+        </div>
+      </div>
+      <div id="fooddiv">
+        <img
+          id="food"
+          src="./HTML CSS Assignment/pexels-robin-stickel-70497.jpg"
+        />
+      </div>
+    </div>
+    <div id="main2">
+      <div id="gallery">
+        <div
+          style="display: flex; flex-direction: column; gap: 10px; width: 50%"
+        >
+          <div style="width: 100%; height: 49%">
+            <img
+              class="img1"
+              src="./HTML CSS Assignment/pexels-rachel-claire-6752433.jpg"
+            />
+          </div>
+          <div style="width: 100%; height: 49%">
+            <img
+              class="img2"
+              src="./HTML CSS Assignment/pexels-eva-bronzini-6141651.jpg"
+            />
+          </div>
+        </div>
+        <div style="width: 50%">
+          <img
+            class="img3"
+            src="./HTML CSS Assignment/pexels-mister-mister-3434523.jpg"
+          />
+        </div>
+      </div>
+      <div id="btn2">
+        <p>LOREM IPUSM</p>
+        <div id="btn2head">
+          <h1>LOREM IPUSM</h1>
+          <h1>SET ADEMIR</h1>
+        </div>
+        <div style="display: flex; align-items: center;gap:15px;margin-top: 30px;">
+          <span>Click Me </span>
+          <img src="./HTML CSS Assignment/icons8-arrow-30.png" style="width: 20px;"/>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
